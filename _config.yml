@@ -1,0 +1,44 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: Prerna
+subtitle: Priya
+email: prernapriya0198@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: "" # the subpath of your site, e.g. /blog
+# url: "http://yourdomain.com" # the base hostname & protocol for your site
+# Social settings
+500px_url:
+facebook_url: https://fb.com/prernapriya01
+github_url: 
+gitlab_url: 
+googleplus_url: 
+instagram_url: https://instagram.com/prernapriya0198
+INSTAGRAM_USER_ID: 
+INSTAGRAM_CLIENT_ID: 
+#access_token: 1603713456.1677ed0.f0991c2e6b5f49a6bcfa0bc963c19d43
+linkedin_url: https://www.linkedin.com/in/prerna-priya-2868b5180/
+pinterest_url:
+slack_url:
+twitter_url: 
+disqus: 
+
+# Build settings
+markdown: kramdown
+
+
+plugins:
+  - jekyll-paginate
+  - jekyll-compose
+  - jekyll-feed
+
+paginate: 6
+paginate_path: "blog/page:num"

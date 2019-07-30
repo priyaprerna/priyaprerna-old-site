@@ -1,0 +1,31 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{{ site.title | escape }}{{ site.subtitle }}</title>
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <link rel="stylesheet" href="{{ "assets/css/app.css" | absolute_url }}">
+  <link href="http://fonts.googleapis.com/css?family=Josefin+Sans:400,700,600,300" media="screen" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="{{ "assets/css/superslides.css" | absolute_url }}"/>
+  <link rel="stylesheet" href="{{ "assets/css/slick-theme.css" | absolute_url }}"/>
+  <link rel="stylesheet" href="{{ "assets/css/slick.css" | absolute_url }}"/>
+  <link rel="stylesheet" href="{{ "assets/css/animate.css" | absolute_url }}"/>
+  <link rel="stylesheet" href="{{ "assets/css/linea-styles.css" | absolute_url }}"/>
+  <link rel="stylesheet" href="{{ "assets/css/linea-arrows-styles.css" | absolute_url }}"/>
+  <link rel="stylesheet" href="{{ "assets/css/font-awesome.css" | absolute_url }}"/>
+  <link rel="stylesheet" href="{{ "assets/css/chivo.css" | absolute_url }}"/>
+  <link rel="stylesheet" href="{{ "assets/css/style.css" | absolute_url }}"/>
+  <link rel="stylesheet" href="{{ "assets/css/responsive.css" | absolute_url }}"/>
+  <script src="{{ "assets/bower_components/modernizr/modernizr.js" | absolute_url }}"></script>
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url | prepend: site.url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+</head>
+<style>
+body{
+  width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding:0;
+}
+</style>
